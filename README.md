@@ -15,7 +15,7 @@ C4ADS is a nonprofit organization dedicated to providing data-driven analysis an
 
 They specialize in using cutting-edge technologies to manage, integrate, and analyze disparate data from diverse languages, regions, and sources, incorporating their own field research from conflict zones and fragile states. C4ADS seeks to engage with local and international audiences and produce compelling analyses on conflict and security issues. In doing so, they fill a critical gap left by the traditional public sector and profit-driven institutions.
 
-The C4ADS website can be found [Here](https://c4ads.org)
+The C4ADS website can be found by following this link: https://c4ads.org
 
 **The Study**
 
