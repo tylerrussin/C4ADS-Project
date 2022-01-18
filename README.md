@@ -15,7 +15,7 @@ C4ADS is a nonprofit organization dedicated to providing data-driven analysis an
 
 They specialize in using cutting-edge technologies to manage, integrate, and analyze disparate data from diverse languages, regions, and sources, incorporating their own field research from conflict zones and fragile states. C4ADS seeks to engage with local and international audiences and produce compelling analyses on conflict and security issues. In doing so, they fill a critical gap left by the traditional public sector and profit-driven institutions.
 
-The C4ADS website can be found [Here](https://c4ads.org/?target=_blank)
+The C4ADS website can be found [Here](https://c4ads.org)
 
 **The Study**
 
@@ -23,9 +23,9 @@ Over two years, the Nuclear Threat Initiative (NTI) and the Center for Advanced 
 
 The work showed that automated data preparation could save hundreds of analyst hours and help identify twice as many potentially high-risk entities as previous manual efforts. In addition, when applied to a baseline study of more than four million records, machine learning techniques could identify 50 new leads for further review. During the two-year study, at least ten entities identified through these approaches were added to a U.S. government export control list, demonstrating that novel analytic approaches to PAI can produce law enforcement-relevant insights.
 
-The work done during this internship has been saved to C4ADS's private GitHub. However, The findings from our study on detection of high-risk and/ or illicit nuclear trade have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf/?target=_blank)
+The work done during this internship has been saved to C4ADS's private GitHub. However, The findings from our study on detection of high-risk and/ or illicit nuclear trade have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf)
 
-C4ADS has continued its research after our contributions during the internship and has published a paper on the most recent findings. The official report can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/C4ADS%20Official%20Report.pdf/?target=_blank)
+C4ADS has continued its research after our contributions during the internship and has published a paper on the most recent findings. The official report can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/C4ADS%20Official%20Report.pdf)
 
 ## Notable Journal Entries Discussing Challenges During the Internship
 
