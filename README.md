@@ -133,7 +133,7 @@ A decision to use the Dual-Use List or the Not Obvious List has to be made. All 
 
 The idea behind and nature of this list is to house the most specific possible words that are dead giveaways to any dual use transactions. To accomplish this we are extremely specific with our word choice. As a consequence of this, any filtration with this list will likely leave out some dual-use transactions.
 
-**Not Obvious**
+**Not Obvious List**
 
 By design this list contains words that are more common. When filtration is done with this list it flags dual-use transitions on a broader level. It succeeds at capturing flagged transactions but it has a much higher risk of falsely labeling a non-dual-use transaction as one. As a consequence having more falsely labeled data will affect any future predictive model’s ability to find patterns and make predictions.
 
