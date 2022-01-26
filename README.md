@@ -11,13 +11,13 @@ Data Scientists: | **Tyler Russin** | **Emma Rose** | **Jan Jaap de Jong** | **B
 
 ### The C4ADS Organization
 
-C4ADS (Center for Advanced Defense Studies) is a nonprofit data analytics and evidence-based research organization. The main goal of C4ADS is to provide insights into global conflict and transnational security issues. To accomplish this the organization analyzes a broad scope of data from a diverse set of sources including their own field research.
+C4ADS (Center for Advanced Defense Studies) is a nonprofit data analytics and evidence-based research organization. The main goal of C4ADS is to provide insights into global conflict and transnational security issues. To accomplish this the organization analyzes a broad scope of data from a diverse set of sources including their own field research. During this internship, the [counterproliferation cell](https://c4ads.org/counterproliferation-cell) of the C4ADS organization was collaborated with. This branch of the organization specializes in research that exposes the development of weapons of mass destruction, technology transformation, and intellectual property theft within states.
 
 The C4ADS website can be found [Here](https://c4ads.org)
 
 **Research**
 
-The members of the internship team with the collaboration of C4ADS worked to demonstrate the viability of using machine learning to detect high-risk and/ or illicit nuclear trade.
+The members of the internship team with the collaboration of C4ADS worked to demonstrate the viability of using machine learning along with other data-driven methods to detect high-risk and/ or illicit nuclear trade.
 
 The findings from the study have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf)
 
@@ -139,5 +139,3 @@ By design this list contains words that are more common. When filtration is done
 -	Start creating a system for bulk testing different predictive models 
 -	Perform several of the proposals discussed above
 -	Growing the base training data set with additional feature engineering and other datasets found in C4ADS S3 Buckets
-
-
