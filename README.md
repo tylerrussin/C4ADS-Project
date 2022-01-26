@@ -19,11 +19,11 @@ The C4ADS website can be found [Here](https://c4ads.org)
 
 **The Study**
 
-Over two years, the Nuclear Threat Initiative (NTI) and the Center for Advanced Defense Studies (C4ADS) worked together on a pilot project to demonstrate the viability of using PAI and machine learning to detect high-risk and/ or illicit nuclear trade.
+Our team with the collaboration of C4ADS worked to demonstrate the viability of using machine learning to detect high-risk and/ or illicit nuclear trade.
 
-The work showed that automated data preparation could save hundreds of analyst hours and help identify twice as many potentially high-risk entities as previous manual efforts. In addition, when applied to a baseline study of more than four million records, machine learning techniques could identify 50 new leads for further review. During the two-year study, at least ten entities identified through these approaches were added to a U.S. government export control list, demonstrating that novel analytic approaches to PAI can produce law enforcement-relevant insights.
+The study took place over several months end proved to be effective.
 
-The work done during this internship has been saved to C4ADS's private GitHub. However, The findings from our study on detection of high-risk and/ or illicit nuclear trade have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf)
+The findings from our study on detection of high-risk and/ or illicit nuclear trade have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf)
 
 C4ADS has continued its research after our contributions during the internship and has published a paper on the most recent findings. The official report can be found [Here](https://c4ads.org/signals-in-the-noise)
 
@@ -143,4 +143,3 @@ By design this list contains words that are more common. When filtration is done
 -	Start creating a system for bulk testing different predictive models 
 -	Perform several of the proposals discussed above
 -	Growing the base training data set with additional feature engineering and other datasets found in C4ADS S3 Buckets
-
