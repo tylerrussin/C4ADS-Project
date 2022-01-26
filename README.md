@@ -25,7 +25,7 @@ The work showed that automated data preparation could save hundreds of analyst h
 
 The work done during this internship has been saved to C4ADS's private GitHub. However, The findings from our study on detection of high-risk and/ or illicit nuclear trade have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf)
 
-C4ADS has continued its research after our contributions during the internship and has published a paper on the most recent findings. The official report can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/C4ADS%20Official%20Report.pdf)
+C4ADS has continued its research after our contributions during the internship and has published a paper on the most recent findings. The official report can be found [Here](https://c4ads.org/signals-in-the-noise)
 
 ## Notable Journal Entries Discussing Challenges During the Internship
 
