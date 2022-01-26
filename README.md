@@ -35,7 +35,7 @@ The following contains information about current challenges we face in nuclear d
 
 **First Objective: Define a Baseline Model (Top Priority)**
 
-As it stands now we have all the means to create a baseline model given the tagged and untagged data we currently have access to. I believe it is in our best interest to construct the basic systems needed for this baseline model to start processing our data. This includes constructing a dataset consisting of the tagged data and a subsample of the untagged data. A barebones pipeline to clean the data and label the data simply based on being either tagged or not tagged. This pipeline would need to include simple imputing, removing of nan values, either one hot or categorical encoding, and a baseline model. 
+As it stands now we have all the means to create a baseline model given the tagged and untagged data we currently have access to. I believe it is in our best interest to construct the basic systems needed for this baseline model to start processing our data. This includes constructing a dataset consisting of the tagged data and a subsample of the untagged data. As well as a barebones pipeline to clean the data and label the data simply based on being either tagged or not tagged. This pipeline would need to include simple imputing, removing of nan values, either one hot or categorical encoding, and a baseline model. 
 
 Recommended Baseline Models:
  
@@ -52,7 +52,7 @@ One solution is to try several different clustering techniques to try to split t
 
 **Brute Force: Manual Labeling**
 
-At first, this might seem like an idea to not consider due to its tedious and time-consuming nature. However, if done correctly it could create a very strong foundation for any predictive models built from it. We have about 16,000 rows of tagged data. If we decided to manually label all 16,000 rows. We could split it between the four of us and we could likely label all of the data within a day or two. We would be labeling based on reading the product description and searching for dual-use items. Once labeled we could train a model that searched the rest of our data. We could then again manually label the newly tagged transaction that the model predicts. 
+At first, this might seem like an idea to not consider due to its tedious and time-consuming nature. However, if done correctly it could create a very strong foundation for any predictive models built from it. We have about 16,000 rows of tagged data. If we decided to manually label all 16,000 rows. We could split it between the four of us and we could likely label all of the data within a day or two. We would be labeling based on reading the product description and searching for dual-use items. Once labeled we could train a model that searched the rest of our data. We could then manually label the newly tagged transaction that the model predicts. 
 
 **Brute Force: Manual Labeling Modified for Automation**
 
@@ -115,7 +115,7 @@ With the new dataset, we have transactions that we are almost certain are involv
 
 One solution is to use clustering. We can look at our flagged transactions from our filtration. Then, analyze these specific transactions with different types of unsupervised learning methods likely clustering and see if any patterns emerge that are mostly only seen in our flagged transactions. If we can find these patterns we can do a search through the lab's 18 tagged datasets and see if our original filtration missed anything. At this point, we will have accomplished the original goal and we can use the result of this clustering to boost the accuracy of future models due to the improved training data.
 
-Also, depending on how performate this theoretical clustering technique/model is it could be our final model.
+Also, depending on the performance of the theoretical clustering technique/model, it could be our final model.
 
 **Improve labeling: Exploring with Supervised Learning**
 
@@ -127,11 +127,11 @@ A decision to use the Dual-Use List or the Not Obvious List has to be made. All 
 
 **Dual-Use List**
 
-The idea behind and nature of this list is to house the most specific possible words that are dead giveaways to any dual use transactions. To accomplish this we are extremely specific with our word choice. As a consequence of this, any filtration with this list will likely leave out some dual-use transactions.
+The idea behind and nature of this list is to house the most specific words possible that are dead giveaways to any dual-use transactions. To accomplish this we are extremely specific with our word choice. As a consequence of this, any filtration with this list will likely leave out some dual-use transactions.
 
 **Not Obvious List**
 
-By design this list contains words that are more common. When filtration is done with this list it flags dual-use transitions on a broader level. It succeeds at capturing flagged transactions but it has a much higher risk of falsely labeling a non-dual-use transaction as one. As a consequence having more falsely labeled data will affect any future predictive model’s ability to find patterns and make predictions.
+By design, this list contains words that are more common. When filtration is done with this list it flags dual-use transitions on a broader level. It succeeds at capturing flagged transactions but it has a much higher risk of falsely labeling a non-dual-use transaction as one. As a consequence having more falsely labeled data will affect any future predictive model’s ability to find patterns and make predictions.
 
 **Tasks that need to be done**
 
