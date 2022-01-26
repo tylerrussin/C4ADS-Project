@@ -11,21 +11,17 @@ Data Scientists: | **Tyler Russin** | **Emma Rose** | **Jan Jaap de Jong** | **B
 
 ### The C4ADS Organization
 
-C4ADS is a nonprofit organization dedicated to providing data-driven analysis and evidence-based reporting on global conflict and transnational security issues.
-
-They specialize in using cutting-edge technologies to manage, integrate, and analyze disparate data from diverse languages, regions, and sources, incorporating their own field research from conflict zones and fragile states. C4ADS seeks to engage with local and international audiences and produce compelling analyses on conflict and security issues. In doing so, they fill a critical gap left by the traditional public sector and profit-driven institutions.
+C4ADS (Center for Advanced Defense Studies) is a nonprofit data analytics and evidence-based research organization. The main goal of C4ADS is to provide insights into global conflict and transnational security issues. To accomplish this the organization analyzes a broad scope of data from a diverse set of sources including their own field research.
 
 The C4ADS website can be found [Here](https://c4ads.org)
 
-**The Study**
+**Research**
 
-Our team with the collaboration of C4ADS worked to demonstrate the viability of using machine learning to detect high-risk and/ or illicit nuclear trade.
+The members of the internship team with the collaboration of C4ADS worked to demonstrate the viability of using machine learning to detect high-risk and/ or illicit nuclear trade.
 
-The study took place over several months end proved to be effective.
+The findings from the study have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf)
 
-The findings from our study on detection of high-risk and/ or illicit nuclear trade have been written into a research paper that can be found [Here](https://github.com/tylerrussin/C4ADS-Research-Paper/blob/main/Finalized%20C4ADS%20Paper.pdf)
-
-C4ADS has continued its research after our contributions during the internship and has published a paper on the most recent findings. The official report can be found [Here](https://c4ads.org/signals-in-the-noise)
+C4ADS has continued its research after the internship team’s contributions and has published a paper on the most recent findings. The official report can be found [Here](https://c4ads.org/signals-in-the-noise)
 
 ## Notable Journal Entries Discussing Challenges During the Internship
 
@@ -143,3 +139,5 @@ By design this list contains words that are more common. When filtration is done
 -	Start creating a system for bulk testing different predictive models 
 -	Perform several of the proposals discussed above
 -	Growing the base training data set with additional feature engineering and other datasets found in C4ADS S3 Buckets
+
+
