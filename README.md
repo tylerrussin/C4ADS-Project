@@ -29,7 +29,7 @@ C4ADS has continued its research after the internship team’s contributions and
 
 March 17th, 2020
 
-**Abstract**
+**Introduction**
 
 The following contains information about current challenges we face in nuclear dual-use item detection and ideas for handling some of those challenges. The proposed concepts below are by no means proven nor do they claim to be optimal.
 
