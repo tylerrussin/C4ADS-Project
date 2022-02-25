@@ -1,5 +1,5 @@
 # C4ADS Internship Project
-## Dual Use Nuclear Fuel Cycle Item Detection
+## Dual-Use Nuclear Fuel Cycle Item Detection
 
 **Members Involved in the Project**
 
@@ -48,11 +48,11 @@ Much data cleaning, merging, and feature engineering can and will be done to imp
 
 **Clustering: Finding the Patterns**
 
-One solution is to try several different clustering techniques to try to split the tagged data into separate categories and then to manually analyze the clusters seeing if any are associated with dual-use trades. Clusters could be based on a variety of different columns such as company, number of shipments, cargo weight, and more. And everything would likely be analyzed based on the product description category.
+One solution is to try several different clustering techniques to try to split the tagged data into separate categories and then to manually analyze the clusters to see if any are associated with dual-use trades. Clusters could be based on a variety of different columns such as company, number of shipments, cargo weight, and more. And everything would likely be analyzed based on the product description category.
 
 **Brute Force: Manual Labeling**
 
-At first, this might seem like an idea to not consider due to its tedious and time-consuming nature. However, if done correctly it could create a very strong foundation for any predictive models built from it. We have about 16,000 rows of tagged data. If we decided to manually label all 16,000 rows. We could split it between the four of us and we could likely label all of the data within a day or two. We would be labeling based on reading the product description and searching for dual-use items. Once labeled we could train a model that searched the rest of our data. We could then manually label the newly tagged transaction that the model predicts. 
+At first, this might seem like an idea to not consider due to its tedious and time-consuming nature. However, if done correctly it could create a very strong foundation for any predictive models built from it. We have about 16,000 rows of tagged data. If we decided to manually label all 16,000 rows. We could split it between the four of us and we could likely label all of the data within a day or two. We would be labeling based on reading the product description and searching for dual-use items. Once labeled we could train a model that searches the rest of our data. We could then manually label the newly tagged transaction that the model predicts. 
 
 **Brute Force: Manual Labeling Modified for Automation**
 
@@ -60,15 +60,15 @@ One simplification would be to manually label the tagged data and as we are manu
 
 **Unique Words: Full Automation**
 
-One way to potentially bypass the manual labeling process and still keep many of the benefits of manually labeling would be to do as follows. First, run through the entirety of the tagged data and produce a list of unique words found in the product descriptions(being sure to ignore certain stop words to minimize noise). Once we have a list of all the unique words found in the product description we could either. Label the tagged data as dual-use or not based on the value counts of the words. Assuming that higher value counts are more or less dual-use. Alternatively, we could manually look through the list of unique words and manually create a new list of words that we believe are involved in dual-use. We could then automatically label all of the tagged data based on if the product description contains words that are within our created list. This is essentially a big filter. It would not use any data science techniques, but it could potentially be the solution to our problem.
+One way to potentially bypass the manual labeling process and still keep many of the benefits of manually labeling would be to do as follows. First, run through the entirety of the tagged data and produce a list of unique words found in the product descriptions(being sure to ignore certain stop words to minimize noise). Once we have a list of all the unique words found in the product description we could either. Label the tagged data as dual-use or not based on the value counts of the words. Assuming that higher value counts are more or less dual-use. Alternatively, we could manually look through the list of unique words and manually create a new list of words that we believe are involved in dual-use transactions. We could then automatically label all of the tagged data based on if the product description contains words that are within our created list. This is essentially a big filter. It would not use any data science techniques, but it could potentially be the solution to our problem.
 
 **Important Side Note Relating to Above Methods: Two Targets**
 
-It might be wise to be labeling the tagged data in two ways: one column as dual-use transactions and another column as a pure nuclear transaction. So a transaction with aluminum pipes would be labeled as dual-use but not as nuclear use and something like uranium ore would be labeled as both dual-use and nuclear use. This could greatly help the accuracy of future models we build and give us extra room for exploration. 
+It might be wise to label the tagged data in two ways: one column as dual-use transactions and another column as a pure nuclear transaction. So a transaction with aluminum pipes would be labeled as dual-use but not as nuclear use and something like uranium ore would be labeled as both dual-use and nuclear use. This could greatly help the accuracy of future models we build and give us extra room for exploration. 
 
 **Important Side Note: Using a List of Keywords**
 
-Important to note that with any of the above methods where some kind of list of keywords is made we could technically determine all dual-use trades by just filtering out if a trades product description contains any of our predefined keywords. This could be pretty accurate in finding transactions with dual-use items. However, solving our problem that way only allows transactions to be determined as dual-use or not based on product description and that might not be enough. Also, it might limit our potential since there could be hidden patterns in other features in our data that a predictive model might be able to pick up on. 
+Important to note that with any of the above methods where some kind of list of keywords is made we could determine all dual-use trades by just filtering out if a trades product description contains any of our predefined keywords. This could be pretty accurate in finding transactions with dual-use items. However, solving our problem that way only allows transactions to be determined as dual-use or not based on product description neglecting information available in other columns. 
 
 List Side Note Part Two
 
@@ -86,11 +86,11 @@ The goals described in entry one of this journal have been explored. The accompl
 -	Dissected tagged data using unique words: full automation method
 -	Two targets have been created: not obvious, and dual-use
 
-Of the accomplished objectives, a baseline was defined and created. It scored 60% with an accuracy metric. However, Due to the unbalanced nature of our dataset using accuracy as our classification metric is not possible. The solution is to use a variety of other metrics such as ROC AUC scores. Doing work with this will be the next task.
+Of the accomplished objectives, a baseline was defined and created. It scored 60% with an accuracy metric. However, due to the unbalanced nature of our dataset using accuracy as our classification metric is not possible. The solution is to use a variety of other metrics such as ROC AUC scores. Doing work with this will be the next task.
 
-As far as dissecting the tagged data we successfully used the unique word method proposed in journal entry one. The result was a list of dual-use keywords that we defined manually and a modified tagged dataset that includes a new column that labels the row as a dual-use transaction or not.
+As far as dissecting the tagged data we successfully used the unique word method proposed in journal entry one. The result was a list of dual-use keywords that we defined manually and a modified tagged dataset that includes a new column that labels a given row as a dual-use transaction or not.
 
-Two targets have been created: a not obvious list of words that are words that hinted at dual-use items but were either too broad or had too many other common industrial uses, and a dual-use list that includes very limited words that almost definitely would be involved in a nuclear transaction.
+Two targets have been created: a not obvious list of words that are words that hinted at dual-use items but were either too broad or had too many other common industrial uses, and a dual-use list that includes very limited words that almost certainly would be involved in a nuclear transaction.
 
 **Goals described in entry one not accomplished**
 
@@ -99,21 +99,21 @@ Two targets have been created: a not obvious list of words that are words that h
 -	Brute force modified
 -	Exploration in using lists to find more tagged data in master data
 
-Clustering and Brute force methods were not attempted. The current results we have from the unique word approach have created the further need for experimentation with these concepts. 
+Clustering and brute force methods were not attempted. The current results we have from the unique word approach have created a further need for experimentation with these concepts. 
 
 For exploration in using lists to find more tagged data in the master data file. The more data we feed our model the more computational cost and engineering that has to be done to handle data processing. More data means things like memory errors and long training times.
 
 **Quick Note**
 
-Moving forward the unique word: full automation concept will be referred to as a filter and/or our filtration method that is used to label rows. 
+Moving forward the unique word full automation concept will be referred to as a filter. As it is our filtration method that is used to label rows. 
 
 **Two Paths to Take Using the Dissected Tagged Data**
 
-With the new dataset, we have transactions that we are almost certain are involved in the dual-use nuclear fuel cycle. However, we are only certain because we are extremely specific on our filtration. The filtration method is likely missing out on other dual-use transactions. Now our final future predictive model can live with this problem and likely still be performant, but proposed are two possibilities that if explored could boost a future model’s performance by improving the data labeling technique. 
+With the new dataset, we have transactions that we are almost certain are involved in the dual-use nuclear fuel cycle. However, we are only certain because we are extremely specific on our filtration words. The filtration method is likely missing out on other dual-use transactions due to not accepting a more broad scope of target words. Now our final future predictive model can live with this problem and likely still be performant, but proposed are two possibilities that if explored could boost a future model’s performance by improving the data labeling technique. 
 
 **Improve labeling: Exploration with clustering**
 
-One solution is to use clustering. We can look at our flagged transactions from our filtration. Then, analyze these specific transactions with different types of unsupervised learning methods likely clustering and see if any patterns emerge that are mostly only seen in our flagged transactions. If we can find these patterns we can do a search through the lab's 18 tagged datasets and see if our original filtration missed anything. At this point, we will have accomplished the original goal and we can use the result of this clustering to boost the accuracy of future models due to the improved training data.
+One solution is to use clustering. We can look at our flagged transactions from our filtration. Then, analyze these specific transactions with different types of unsupervised learning methods likely clustering, and see if any patterns emerge that are mostly only seen in our flagged transactions. If we can find these patterns we can do a search through the lab's 18 tagged datasets and see if our original filtration missed anything. At this point, we will have accomplished the original goal and we can use the result of this clustering to boost the accuracy of future models due to the improved training data.
 
 Also, depending on the performance of the theoretical clustering technique/model, it could be our final model.
 
@@ -123,7 +123,7 @@ Currently, we have a dataset of 54,000 rows. Of these rows, about five to six th
 
 **Experiments Between Dual-Use List and Not Obvious List**
 
-A decision to use the Dual-Use List or the Not Obvious List has to be made. All words in the Dual-Use List are in the Not Obvious List, but not all words in the Not Obvious List are in the Dual-Use List.
+A decision to use the dual-use list or the not obvious list has to be made. All words in the dual-use list are in the not obvious list, but not all words in the not obvious list are in the dual-use list.
 
 **Dual-Use List**
 
@@ -131,7 +131,7 @@ The idea behind and nature of this list is to house the most specific words poss
 
 **Not Obvious List**
 
-By design, this list contains words that are more common. When filtration is done with this list it flags dual-use transitions on a broader level. It succeeds at capturing flagged transactions but it has a much higher risk of falsely labeling a non-dual-use transaction as one. As a consequence having more falsely labeled data will affect any future predictive model’s ability to find patterns and make predictions.
+By design, this list contains more common words. When filtration is done with this list it flags dual-use transitions on a broader level. It succeeds at capturing flagged transactions but it has a much higher risk of falsely labeling a non-dual-use transaction as one. As a consequence having more falsely labeled data will affect any future predictive model’s ability to find patterns and make predictions.
 
 **Tasks that need to be done**
 
