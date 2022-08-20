@@ -1,4 +1,4 @@
-# C4ADS Internship Project
+# C4ADS Project
 ## Dual-Use Nuclear Fuel Cycle Item Detection
 
 **Members Involved in the Project**
